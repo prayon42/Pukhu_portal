@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Add these styles to your existing styles or style.css file */
+header {
+  background: url('../image/header.jpg');
+  color: white;
+  padding: 40px 0; /* Adjust as needed */
+}
+
+.header-title {
+  text-align: center;
+}
+
+.header-title h1 {
+  font-weight: 1000;
+  font-size: 6em;
+  margin: 10; 
+  font-family:  'Gill Sans MT';
+  color: skyblue;
+  flood-color: skyblue;
+}
+
+.header-title h2 {
+  font-weight: 500;
+  font-size: 4em;
+  margin: 10px; 
+  font-family:  'Gill Sans MT';
+  color: skyblue;
+  flood-color: skyblue
+}
+
+/* Stylish background overlay */
+header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Adjust the overlay color and transparency */
+  z-index: -1;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2c3e50;
+    padding: 10px;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #34495e;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-family: 'Times New Roman';
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#home {
+  text-align: center;
+}
+.big-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 40px; /* Add margin to separate the image from the section's content */
+}
+#home p {
+  font-family: 'Your Custom Font', sans-serif; /* Replace 'Your Custom Font' with the name of your preferred font */
+  font-size: 1.5em;
+  line-height: 1.8;
+  color: #333;
+  margin-top: 20px;
+}
+#language-toggle {
+  text-align: right;
+  margin-top: 5px;
+}
+
+#toggle-button {
+  padding: 5px 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes drop {
+    0% {
+      bottom: 0px;
+      opacity: 1;
+    }
+    
+    80% {
+      opacity: 1;
+    }
+    
+    100% {
+      opacity: 1;
+      bottom: -200px;
+    }
+  }
+  
+  @keyframes wave {
+    0% {
+      background-position: 0 160px;
+      background-size: 170px 300px;
+    }
+    
+    100% {
+      background-position: 500px -18px;
+      background-size: 250px 150px;
+    }
+  }
+  
+  body {
+    background-color: #e0e0e0;
+  }
+  
+  .big-image {
+      max-height: 500px;
+      max-width: 500px;
+      margin-buttom: 20px;
+      /* Maintain aspect ratio */
+  }
+
+  .calculator {
+      font-size: 1.5em; /* Increase the font size of the calculator text */
+  }
+

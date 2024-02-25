@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pukhu Portal</title>
+    <!-- Add Font Awesome CDN -->
+    <link rel="stylesheet" href="../css/calculate.css"> <!-- Link to the external style.css file -->
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div id="language-toggle">
+        <button id="toggle-button">English</button>
+    </div>
+    
+    <header>
+        <div class="logo-container">
+            <div class="header-title">
+                <h1>Pukhu (पुखु:) Portal</h1>
+                <h2>Your Gateway to Ponds of Bhaktapur</h2>
+            </div>
+            <!-- Add any additional elements or content for the header -->
+        </div>
+    </header>
+
+    <nav>
+        <a href="./index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="./map.html"><i class="fas fa-compass"></i> Explore</a>
+        <a href="./calculate.html"><i class="fas fa-calculator"></i> Calculate</a>
+        <a href="./contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="./references.html"><i class="fas fa-book"></i> References</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <img src="../image/water_quality.jpeg" alt="Pond Image" class= "big-image">
+            <!-- Calculator content replaces the paragraph -->
+            <div class="calculator">
+                <h1>Carlson Trophic State Index Calculator
+                    
+                </h1>
+
+                <div class="parameter">
+                    <label for="secchiDepth">Secchi Depth (m):</label>
+                    <input type="text" id="secchiDepth" placeholder="Enter value">
+                    <button class="info-button" onclick="showInfo('secchiDepth')">ℹ️</button>
+                </div>
+
+                <div class="parameter">
+                    <label for="totalPhosphorus">Total Phosphorus (mg/L):</label>
+                    <input type="text" id="totalPhosphorus" placeholder="Enter value">
+                    <button class="info-button" onclick="showInfo('totalPhosphorus')">ℹ️</button>
+                </div>
+
+                <div class="parameter">
+                    <label for="transparency">Transparency (m):</label>
+                    <input type="text" id="transparency" placeholder="Enter value">
+                    <button class="info-button" onclick="showInfo('transparency')">ℹ️</button>
+                </div>
+
+                <button onclick="calculateWQI()">Calculate WQI</button>
+
+                <div id="result"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

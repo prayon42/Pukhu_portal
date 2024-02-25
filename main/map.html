@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map Example</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="../css/map.css" /> <!-- You can create this file for additional styles if needed -->
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="header-title">
+                <h1>Pukhu (पुखु:) Portal</h1>
+                <h2>Your Gateway to Ponds of Bhaktapur</h2>
+            </div>
+            <!-- Add any additional elements or content for the header -->
+        </div>
+    </header>
+
+    <nav>
+        <a href="./index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="./map.html"><i class="fas fa-compass"></i> Explore</a>
+        <a href="./calculate.html"><i class="fas fa-calculator"></i> Calculate</a>
+        <a href="./contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="./references.html"><i class="fas fa-book"></i> References</a>
+    </nav>
+
+    <div id="map"></div>
+    <form id="distanceForm">
+        <label for="pond1">Select Pond 1:</label>
+        <select id="pond1">
+            <!-- Populate this dropdown dynamically with pond names -->
+        </select>
+
+        <label for="pond2">Select Pond 2:</label>
+        <select id="pond2">
+            
+        </select>
+
+        <button type="submit">Calculate Distance</button>
+    </form>
+    <div id="distanceResult"></div>
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../js/map.js"></script>
+
+</body>
+</html>
